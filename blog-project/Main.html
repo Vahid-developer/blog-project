@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pa" dir="rtl" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منوی شفاف</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="pb-2 pr-3 pl-3 bg-slate-200 bg-img pt-20 dark:bg-black ">
+    <!-- hader-menu start-->
+<div id="navbar" class=" scrolled z-10 mt-2 border-b-2 border-stone-400 navbar fixed top-0 left-0 flex w-full justify-between items-center text-right h-16 backdrop-blur-lg">
+        <!-- start right header -->
+    <div class="flex items-center"> 
+    <button id="menu-toggle" class="dark:text-white lg:hidden xl:hidden 2xl:hidden pr-2 transform hover:scale-125 hover:ease-in duration-100 active:text-gray-50">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </button>    
+    <nav class="flex items-center justify-between p-5 ">
+        <!-- desktop menu ;D -->
+        <div id="menu" class="hidden lg:flex lg:flex-row lg:space-x-4">
+            <div class="flex px-3 text-gray-800 hover:scale-125 transition-transform duration-100 active:text-zinc-300"">
+                <button class="dark:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                      </svg>
+                </button>
+                <a class="dark:text-white" href="#">خانه</a>
+            </div>
+            <div class="flex px-3 text-gray-800 hover:scale-125 transition-transform duration-100 active:text-zinc-300">
+                <button class="dark:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                      </svg>                      
+                </button class="dark:text-white">
+                <a class="dark:text-white" href="#">مقاله</a>
+            </div>
+            <div class="flex px-3 text-gray-800 hover:scale-125 transition-transform duration-100 active:text-zinc-300">
+                <button class="dark:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                      </svg>                          
+                </button class="dark:text-white">
+                <a class="dark:text-white" href="#">ارتباط با ما</a>
+            </div>
+            <div class="flex px-3 text-gray-800 hover:scale-125 transition-transform duration-100 active:text-zinc-300">
+                <button class="dark:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                      </svg>                      
+                </button>
+                <a class="dark:text-white" href="#">درباره ما</a>
+            </div>
+        </div>
+        <!-- mobile menu ;D -->
+        <div id="mobile-menu" class="absolute top-16 backdrop-blur-2xl bg-opacity-50 right-0 w-48 bg-white hidden lg:hidden transition-all duration-300 ease-in-out overflow-hidden max-h-0">
+          <div class="flex px-3 py-2 text-gray-800  transition-transform duration-100 active:text-zinc-300">
+                <button class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                      </svg>
+                </button>
+                <a class="" href="#">خانه</a>
+            </div>
+            <div class="flex px-3 py2 text-gray-800  transition-transform duration-100 active:text-zinc-300">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                      </svg>                      
+                </button>
+                <a class="" href="#">مقاله</a>
+            </div>
+            <div class="flex px-3 py-2 text-gray-800  transition-transform duration-100 active:text-zinc-300">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                      </svg>                      
+                </button>
+                <a class="" href="#">درباره ما</a>
+            </div>
+            <div class="flex px-3 py-2 text-gray-800  transition-transform duration-100 active:text-zinc-300">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                      </svg>                          
+                </button>
+                <a class="" href="#">ارتباط با ما</a>
+            </div>
+        </div>
+    </nav>
+</div>
+        <!-- start mid header -->
+        <div class="flex items-center justify-center lg:ml-20 flex-grow">
+            <button id="toggleButton" class="dark:text-white active:text-sky-50 sm:block md:block lg:hidden xl:hidden 2xl:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 ml-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+            </button>
+            <div id="searchContainer" class="shadow-sm rounded-full shadow-white overflow-hidden transition-all duration-500 ease-in-out max-h-0 sm:max-h-0 md:max-h-0 ">
+                <input id="searchInput" type="search" class=" dark:placeholder:text-white dark:text-white transition-opacity duration-500 ease-in-out h-10 w-full max-w-xs min-w-20 outline-none text-start ml-10 pr-2 border border-transparent rounded-full backdrop-blur-3xl bg-white bg-opacity-10 shadow-inner  shadow-gray-600 placeholder-black" 
+                placeholder="به دنبال مقاله ...">
+            </div>
+        </div>
+       <!-- start left header -->
+       <div class="relative h-12 w-48 min-w-36 flex items-center justify-between">
+        <button id="togglebutton" class="dark:text-white flex items-center justify-center w-10 h-10">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+            </svg>                
+        </button>
+        <div class="ml-10 lg:ml-4 flex items-center">
+            <button class="dark:text-white flex items-center active:text-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
+                </svg>   
+                <p class="dark:text-white ml-2 hidden lg:block">ورود</p>             
+            </button>
+        </div>
+    </div>
+    
+</div>
+
+    <!---------------- start section -------------------->
+        <div class="blur-xl -z-50 absolute w-80 lg:w-[1000px] left-0 -bottom-96 h-60">
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg2">
+                <defs>
+                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color: rgb(200, 105, 255);"></stop> <!-- رنگ اول (صورتی) -->
+                        <stop offset="100%" style="stop-color: rgb(255, 123, 0);"></stop> <!-- رنگ دوم (آبی) -->
+                    </linearGradient>
+                </defs>
+                <path id="blob2" fill="url(#gradient2)">
+                    <animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+                        values="M447.5,311Q417,372,357,383Q297,394,236,438Q175,482,122.5,431.5Q70,381,52,315.5Q34,250,69.5,197.5Q105,145,150,113.5Q195,82,251.5,76Q308,70,368,95.5Q428,121,453,185.5Q478,250,447.5,311Z;
+                                M443,306Q404,362,364.5,421Q325,480,251.5,475Q178,470,151,406Q124,342,104.5,296Q85,250,71.5,180Q58,110,119.5,74Q181,38,249.5,39Q318,40,373,80.5Q428,121,455,185.5Q482,250,443,306Z;
+                                M401.5,303.5Q397,357,350.5,386Q304,415,240.5,445Q177,475,143,413.5Q109,352,101,301Q93,250,108.5,204.5Q124,159,161.5,125.5Q199,92,259,64Q319,36,385.5,69.5Q452,103,429,176.5Q406,250,401.5,303.5Z;
+                                M429.5,323.5Q452,397,378.5,409Q305,421,246.5,431Q188,441,122,416Q56,391,36.5,320.5Q17,250,71,204.5Q125,159,161.5,124.5Q198,90,254.5,75.5Q311,61,354,102Q397,143,402,196.5Q407,250,429.5,323.5Z;
+                                M429.5,301Q391,352,348,385.5Q305,419,239,453.5Q173,488,151,413Q129,338,81,294Q33,250,63,193Q93,136,144.5,109Q196,82,261.5,47.5Q327,13,355,83Q383,153,425.5,201.5Q468,250,429.5,301Z;
+                                M447.5,311Q417,372,357,383Q297,394,236,438Q175,482,122.5,431.5Q70,381,52,315.5Q34,250,69.5,197.5Q105,145,150,113.5Q195,82,251.5,76Q308,70,368,95.5Q428,121,453,185.5Q478,250,447.5,311Z">
+                    </animate>
+                </path>
+            </svg>
+        </div>
+    
+        
+<div class="relative">
+    <div class=" blur-xl -z-50 absolute w-80 lg:w-[1000px] top-0 right-0">
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color: rgb(253, 187, 45);"></stop>
+                <stop offset="100%" style="stop-color: rgb(34, 193, 195);"></stop>
+              </linearGradient>
+            </defs>
+            <path id="blob"fill="url(#gradient)">
+                <animate attributeName="d"
+                    dur="10000ms"
+                    repeatCount="indefinite"
+
+                    values="M447.5,311Q417,372,357,383Q297,394,236,438Q175,482,122.5,431.5Q70,381,52,315.5Q34,250,69.5,197.5Q105,145,150,113.5Q195,82,251.5,76Q308,70,368,95.5Q428,121,453,185.5Q478,250,447.5,311Z 
+                    ;                    
+                    M443,306Q404,362,364.5,421Q325,480,251.5,475Q178,470,151,406Q124,342,104.5,296Q85,250,71.5,180Q58,110,119.5,74Q181,38,249.5,39Q318,40,373,80.5Q428,121,455,185.5Q482,250,443,306Z
+                    ;
+                    M401.5,303.5Q397,357,350.5,386Q304,415,240.5,445Q177,475,143,413.5Q109,352,101,301Q93,250,108.5,204.5Q124,159,161.5,125.5Q199,92,259,64Q319,36,385.5,69.5Q452,103,429,176.5Q406,250,401.5,303.5Z
+                    ;
+                    M429.5,301Q391,352,348,385.5Q305,419,239,453.5Q173,488,151,413Q129,338,81,294Q33,250,63,193Q93,136,144.5,109Q196,82,261.5,47.5Q327,13,355,83Q383,153,425.5,201.5Q468,250,429.5,301Z                    
+                    ;
+                    M429.5,323.5Q452,397,378.5,409Q305,421,246.5,431Q188,441,122,416Q56,391,36.5,320.5Q17,250,71,204.5Q125,159,161.5,124.5Q198,90,254.5,75.5Q311,61,354,102Q397,143,402,196.5Q407,250,429.5,323.5Z                    
+                    ;
+                    M447.5,311Q417,372,357,383Q297,394,236,438Q175,482,122.5,431.5Q70,381,52,315.5Q34,250,69.5,197.5Q105,145,150,113.5Q195,82,251.5,76Q308,70,368,95.5Q428,121,453,185.5Q478,250,447.5,311Z
+                    "
+                ></animate>
+            </path>
+          </svg>
+    </div>
+
+
+    
+    <div class=" top-2 gap-4 grid grid-cols-12 lg:grid-flow-row-dense grid-rows-12 h-screen">
+            <div class="items-center justify-center border-2 backdrop-blur-xl bg-opacity-50 rounded-lg bg-white grid col-span-12 row-span-6  lg:col-span-12 lg:row-span-6">
+                <div class=""><h1 id="typewriter" class="text-4xl font-bold"></h1></div>
+            </div>
+            <div class="relative backdrop-blur-xl bg-opacity-50 bg-white rounded-lg grid col-span-12 row-span-6 lg:col-span-12 lg:row-span-6">    
+                <div class=" max-w-xl rounded-lg border absolute right-0 bottom-2 top-2  flex justify-start items-start ">
+                        <p class="text-sm lg:leading-10">گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی،</p>
+
+                        <div class=" absolute bottom-1 top-32 md:top-24 lg:hidden left-1 right-0 max-w-xl overflow-hidden rounded-lg flex items-center justify-center">
+                            <img class="h-60 w-full object-cover" src="img/cofe.png" alt="">
+                        </div>
+                </div>
+                         <div class="border-4 border-gray-500 absolute bottom-2 top-2 left-2 right-[700px] hidden  overflow-hidden rounded-lg lg:flex items-center justify-center">
+                             <img class="h-full w-full object-cover" src="img/cofe.png" alt="">
+                         </div>
+                
+            </div>
+    </div>
+    
+
+    <div class=" start-0 grid pt-4 pb-4 lg:pt-4 gap-4 grid-cols-12 grid-flow-row-dense grid-rows-12 h-screen">
+        <div class="backdrop-blur-xl bg-opacity-50 border-2 rounded-lg bg-white grid col-span-12 row-span-6  lg:col-span-7 lg:row-span-3 overflow-hidden">
+            <p class="text-sm lg:leading-10">لیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌ گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی،</p>
+        </div>
+        <div class="backdrop-blur-xl bg-opacity-50 rounded-lg bg-white grid col-span-12 row-span-6 lg:col-span-7 lg:row-span-3 overflow-hidden">
+            <p class="text-sm lg:leading-10">لیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌ گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی،</p>
+        </div>
+    
+        <div class="backdrop-blur-xl bg-opacity-50 rounded-lg grid-cols-subgrid bg-white grid items-center col-start-2 col-span-10 row-span-12 lg:col-span-5 lg:row-span-6 relative overflow-hidden">
+            <img class="absolute inset-0 h-full w-full object-cover" src="img/bg-gray.png" alt="">
+        </div>
+
+    
+        <div class="backdrop-blur-xl bg-opacity-50 rounded-lg bg-white grid col-span-12 row-span-6 lg:col-span-5 lg:row-span-6 overflow-hidden">
+            <img class="absolute inset-0 h-full w-full object-cover hidden lg:block" src="img/bg-gray.png" alt="">
+            <p class="text-sm lg:leading-10 lg:hidden">لیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌ گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی،</p>
+        </div>
+        <div class="backdrop-blur-xl bg-opacity-50 rounded-lg bg-white grid col-span-12 row-span-6 lg:col-span-7 lg:row-span-3 overflow-hidden">
+            <p class="text-sm lg:leading-10 ">لیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌ گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی،</p>
+        </div>
+        <div class="backdrop-blur-xl bg-opacity-50 rounded-lg bg-white grid col-start-2 col-span-10 row-span-12 lg:col-span-7 lg:row-span-3 overflow-hidden">
+            <img class="absolute inset-0 h-full w-full object-cover lg:hidden " src="img/bg-gray.png" alt="">
+            <p class="text-sm lg:leading-10 ">لیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌ گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی،</p>
+        </div>
+    </div>
+
+
+
+    <div class="top-0 grid pb-16  lg:pt-4 gap-4 grid-cols-12 grid-flow-row-dense grid-rows-6 h-52">
+        <div class="backdrop-blur-xl bg-opacity-50 border-2 rounded-lg bg-white grid col-span-12 row-span-6  lg:col-span-12 lg:row-span-12 overflow-hidden">
+            <p class="text-sm lg:leading-10 ">لیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌ گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن صفحه و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید، تا از نظر گرافیکی نشانگر چگونگی نوع و اندازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی،</p>
+        </div>
+
+            <!------------- start footer --------------->
+
+        <div class="relative backdrop-blur-xl bg-opacity-50 border-2 rounded-lg bg-white grid col-span-12 row-span-12 lg:h-60 lg:col-span-12 lg:row-span-12 items-center justify-center">
+            <button class="absolute left-5 inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group md:static lg:static bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                ساخت بلاگ
+                </span>
+            </button>
+            <p class="absolute right-0 top-10 underline underline-offset-8 lg:text-xl">مارو در زیر دنبال کنید .</p>
+            <div class="flex items-center justify-center w-40 absolute bottom-8 md:right-0 lg:right-0 top-10">
+                <button class="active:text-gray-400">
+                    <svg width="50px" height="50px" viewBox="-20 0 190 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M76.33 132.14L62.5 143.73L58.59 144.26L49.84 114.11L19.06 104L113.82 67.8799L118.29 67.9799L103.36 149.19L76.33 132.14ZM100.03 83.1399L56.61 109.17L61.61 130.5L62.98 130.19L68.2 113.73L102.9 83.4799L100.03 83.1399Z" fill="#000000"/>
+                    </svg>
+                </button>
+                <button class="pt-2 pr-1">
+                    <svg width="28px" height="30px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                </button>
+                <button class="pt-2 pr-3">
+                    <svg width="36px" height="50px" viewBox="0 0 24 24" version="1.1" id="svg8" inkscape:version="0.92.4 (5da689c313, 2019-01-14)" sodipodi:docname="1881161.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  xml:space="preserve"><path id="path4" inkscape:connector-curvature="0" d="M16.6,14c-0.2-0.1-1.5-0.7-1.7-0.8c-0.2-0.1-0.4-0.1-0.6,0.1c-0.2,0.2-0.6,0.8-0.8,1c-0.1,0.2-0.3,0.2-0.5,0.1c-0.7-0.3-1.4-0.7-2-1.2c-0.5-0.5-1-1.1-1.4-1.7c-0.1-0.2,0-0.4,0.1-0.5c0.1-0.1,0.2-0.3,0.4-0.4c0.1-0.1,0.2-0.3,0.2-0.4c0.1-0.1,0.1-0.3,0-0.4c-0.1-0.1-0.6-1.3-0.8-1.8C9.4,7.3,9.2,7.3,9,7.3c-0.1,0-0.3,0-0.5,0C8.3,7.3,8,7.5,7.9,7.6C7.3,8.2,7,8.9,7,9.7c0.1,0.9,0.4,1.8,1,2.6c1.1,1.6,2.5,2.9,4.2,3.7c0.5,0.2,0.9,0.4,1.4,0.5c0.5,0.2,1,0.2,1.6,0.1c0.7-0.1,1.3-0.6,1.7-1.2c0.2-0.4,0.2-0.8,0.1-1.2C17,14.2,16.8,14.1,16.6,14 M19.1,4.9C15.2,1,8.9,1,5,4.9c-3.2,3.2-3.8,8.1-1.6,12L2,22l5.3-1.4c1.5,0.8,3.1,1.2,4.7,1.2h0c5.5,0,9.9-4.4,9.9-9.9C22,9.3,20.9,6.8,19.1,4.9 M16.4,18.9c-1.3,0.8-2.8,1.3-4.4,1.3h0c-1.5,0-2.9-0.4-4.2-1.1l-0.3-0.2l-3.1,0.8l0.8-3l-0.2-0.3C2.6,12.4,3.8,7.4,7.7,4.9S16.6,3.7,19,7.5C21.4,11.4,20.3,16.5,16.4,18.9"/></svg>
+                </button>
+
+                <button class="pr-1">
+                <svg width="37px" height="50x" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.65021 12.4769C5.9136 12.3939 6.05986 12.1132 5.9769 11.8498C5.89394 11.5864 5.61317 11.4401 5.34979 11.5231L5.65021 12.4769ZM2.00197 9.51639L1.51836 9.38942L1.26442 10.3566L1.74803 10.4836L2.00197 9.51639ZM9 14.5V15H10V14.5H9ZM9.0625 9.6875L9.00906 9.19036C8.81734 9.21097 8.65455 9.33999 8.5907 9.52194C8.52686 9.70389 8.57333 9.90634 8.71013 10.0422L9.0625 9.6875ZM12.5 5.9125H13L13 5.91089L12.5 5.9125ZM11.6669 3.90625L11.2008 3.72524C11.1291 3.90974 11.1731 4.11914 11.3128 4.2593L11.6669 3.90625ZM11.6169 1.88937L12.0734 1.68549C12.0132 1.55057 11.8963 1.44921 11.7542 1.40861L11.6169 1.88937ZM9.44438 2.68125L9.31826 3.16508C9.45382 3.20042 9.59799 3.17726 9.71566 3.10125L9.44438 2.68125ZM5.55562 2.68125L5.28442 3.1013C5.40208 3.17727 5.54621 3.20041 5.68174 3.16508L5.55562 2.68125ZM3.38313 1.88937L3.24564 1.40865C3.10362 1.44926 2.98682 1.55061 2.92658 1.68549L3.38313 1.88937ZM3.33313 3.90625L3.68715 4.25933C3.82693 4.11917 3.87087 3.90975 3.79921 3.72524L3.33313 3.90625ZM2.5 5.92875H3L3 5.92747L2.5 5.92875ZM5.9375 9.6875L6.29045 10.0417C6.42616 9.9064 6.47265 9.7055 6.41015 9.52439C6.34765 9.34328 6.18715 9.21381 5.99691 9.19104L5.9375 9.6875ZM5.5 11H6C6 10.9878 5.99955 10.9756 5.99866 10.9634L5.5 11ZM5 14.5V15H6V14.5H5ZM5.34979 11.5231C4.74678 11.713 4.3643 11.6918 4.11084 11.6082C3.85886 11.525 3.66567 11.3578 3.4814 11.1175C3.38808 10.9959 3.3021 10.8623 3.21181 10.7161C3.12597 10.5771 3.02879 10.4142 2.93047 10.2692C2.73966 9.9878 2.45815 9.63616 2.00197 9.51639L1.74803 10.4836C1.82748 10.5045 1.93206 10.5786 2.10281 10.8304C2.18527 10.952 2.26274 11.0825 2.36104 11.2417C2.4549 11.3936 2.56254 11.5627 2.68797 11.7262C2.9412 12.0563 3.28599 12.389 3.79744 12.5578C4.30742 12.7261 4.91384 12.7088 5.65021 12.4769L5.34979 11.5231ZM10 10.9375C10 10.6201 9.98611 10.3301 9.89602 10.0596C9.8001 9.77159 9.63428 9.55071 9.41487 9.33276L8.71013 10.0422C8.8651 10.1962 8.91802 10.2878 8.94726 10.3756C8.98232 10.4809 9 10.6299 9 10.9375H10ZM9.11594 10.1846C10.0189 10.0876 11.004 9.85986 11.7626 9.20319C12.5429 8.52773 13 7.47445 13 5.9125H12C12 7.2718 11.6105 8.01226 11.1081 8.44712C10.5841 8.90076 9.8505 9.09992 9.00906 9.19036L9.11594 10.1846ZM13 5.91089C12.9971 5.02667 12.6453 4.17934 12.0209 3.5532L11.3128 4.2593C11.751 4.69877 11.998 5.29349 12 5.91411L13 5.91089ZM12.133 4.08726C12.2823 3.70286 12.3539 3.29267 12.3436 2.88041L11.3439 2.9052C11.3509 3.18532 11.3022 3.46404 11.2008 3.72524L12.133 4.08726ZM12.3436 2.88041C12.3334 2.46816 12.2416 2.06202 12.0734 1.68549L11.1603 2.09326C11.2746 2.34911 11.337 2.62508 11.3439 2.9052L12.3436 2.88041ZM11.6169 1.88937C11.7542 1.40861 11.7538 1.40848 11.7533 1.40834C11.7531 1.4083 11.7527 1.40816 11.7523 1.40807C11.7517 1.40789 11.751 1.40771 11.7504 1.40752C11.749 1.40716 11.7477 1.40678 11.7462 1.4064C11.7434 1.40564 11.7404 1.40485 11.7372 1.40405C11.7309 1.40245 11.7239 1.40078 11.7161 1.39909C11.7007 1.39571 11.6826 1.39225 11.6617 1.38904C11.6199 1.38261 11.5674 1.37725 11.504 1.37556C11.3769 1.37216 11.2079 1.38354 10.9947 1.42908C10.5691 1.52001 9.97001 1.7465 9.17309 2.26125L9.71566 3.10125C10.435 2.63663 10.9221 2.46717 11.2037 2.40701C11.3441 2.37701 11.434 2.37404 11.4773 2.3752C11.4991 2.37578 11.5097 2.37742 11.5097 2.37742C11.5098 2.37743 11.5072 2.37704 11.5021 2.37592C11.4996 2.37537 11.4964 2.37463 11.4927 2.37368C11.4908 2.3732 11.4887 2.37267 11.4865 2.37209C11.4854 2.37179 11.4843 2.37148 11.4831 2.37116C11.4826 2.37099 11.482 2.37083 11.4814 2.37066C11.4811 2.37057 11.4806 2.37044 11.4804 2.3704C11.48 2.37027 11.4795 2.37014 11.6169 1.88937ZM9.57049 2.19742C8.21284 1.84354 6.78716 1.84354 5.42951 2.19742L5.68174 3.16508C6.87399 2.85431 8.12601 2.85431 9.31826 3.16508L9.57049 2.19742ZM5.82683 2.2612C5.02965 1.74649 4.43054 1.52002 4.00504 1.42909C3.79191 1.38354 3.62298 1.37216 3.49591 1.37556C3.4325 1.37725 3.38003 1.38261 3.33822 1.38905C3.31734 1.39226 3.2992 1.39573 3.28376 1.39911C3.27604 1.4008 3.26901 1.40247 3.26266 1.40408C3.25948 1.40488 3.25647 1.40567 3.25364 1.40643C3.25222 1.40681 3.25085 1.40719 3.24951 1.40756C3.24885 1.40774 3.24819 1.40793 3.24755 1.40811C3.24722 1.4082 3.24675 1.40833 3.24659 1.40838C3.24611 1.40851 3.24564 1.40865 3.38313 1.88937C3.52061 2.3701 3.52014 2.37023 3.51968 2.37037C3.51953 2.37041 3.51907 2.37054 3.51876 2.37062C3.51816 2.3708 3.51756 2.37096 3.51698 2.37112C3.51581 2.37145 3.51467 2.37176 3.51357 2.37206C3.51138 2.37265 3.50934 2.37318 3.50745 2.37365C3.50367 2.37461 3.5005 2.37535 3.49795 2.3759C3.49286 2.37702 3.49028 2.37742 3.49029 2.37742C3.4903 2.37741 3.49295 2.37701 3.49829 2.37653C3.50363 2.37605 3.51172 2.37549 3.52262 2.3752C3.56589 2.37405 3.65567 2.377 3.79606 2.40701C4.07758 2.46717 4.56473 2.63664 5.28442 3.1013L5.82683 2.2612ZM2.92658 1.68549C2.75843 2.06202 2.66658 2.46816 2.65636 2.88041L3.65606 2.9052C3.663 2.62508 3.72541 2.34911 3.83967 2.09326L2.92658 1.68549ZM2.65636 2.88041C2.64614 3.29267 2.71775 3.70286 2.86704 4.08726L3.79921 3.72524C3.69777 3.46404 3.64911 3.18532 3.65606 2.9052L2.65636 2.88041ZM2.9791 3.55317C2.66761 3.8655 2.42079 4.23621 2.25278 4.64407L3.1774 5.02495C3.29532 4.7387 3.46854 4.47853 3.68715 4.25933L2.9791 3.55317ZM2.25278 4.64407C2.08477 5.05193 1.99887 5.48892 2 5.93003L3 5.92747C2.99921 5.61789 3.05949 5.31119 3.1774 5.02495L2.25278 4.64407ZM2 5.92875C2 7.48166 2.45806 8.52573 3.23874 9.19657C3.99602 9.84729 4.97941 10.0764 5.87809 10.184L5.99691 9.19104C5.15121 9.08984 4.41586 8.88958 3.89048 8.43812C3.3885 8.00677 3 7.27584 3 5.92875H2ZM5.58455 9.33335C5.08499 9.83121 4.95633 10.4236 5.00134 11.0366L5.99866 10.9634C5.96867 10.5551 6.05126 10.28 6.29045 10.0417L5.58455 9.33335ZM5 11V14.5H6V11H5ZM10 14.5V13H9V14.5H10ZM10 13V10.9375H9V13H10Z" fill="#000000"/>
+                </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+        
+</div>
+
+
+
+
+
+<script src="Script.js">
+</script>
+</body>
+</html>
+
+
+
+        
